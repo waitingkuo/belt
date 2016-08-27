@@ -22,8 +22,8 @@ package cmd
 
 import (
 	"fmt"
+	"github.com/mitchellh/go-homedir"
 	"os"
-	"os/user"
 	"path/filepath"
 	"runtime"
 	"strings"
@@ -44,12 +44,12 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 
-		usr, err := user.Current()
+		homeDir, err := homedir.Dir()
 		if err != nil {
 			panic(err)
 		}
 
-		rootPath := filepath.Join(usr.HomeDir, ".belt")
+		rootPath := filepath.Join(homeDir, ".belt")
 
 		// FIXME
 		// move the store relative codes to store.go
