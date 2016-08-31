@@ -68,6 +68,7 @@ to quickly create a Cobra application.`,
 		// check how congo or brew work
 		// missing verson control
 		// move to another dir (pkg?)
+		// consider using outer bash instead
 
 		// consider GOARCH
 		var rawurl string
