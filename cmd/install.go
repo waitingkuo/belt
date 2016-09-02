@@ -80,6 +80,7 @@ to quickly create a Cobra application.`,
 		default:
 			fmt.Println(runtime.GOOS, "isn't supported")
 		}
+		// consider version
 		if packageName == "etcd" {
 			fmt.Println("Downloading ...")
 			destPath, err := utils.Download(rawurl, "/tmp")
