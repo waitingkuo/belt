@@ -74,9 +74,9 @@ to quickly create a Cobra application.`,
 		var rawurl string
 		switch runtime.GOOS {
 		case "linux":
-			rawurl = "https://github.com/coreos/etcd/releases/download/v3.0.6/etcd-v3.0.6-linux-amd64.zip"
+			rawurl = "https://github.com/coreos/etcd/releases/download/v3.0.7/etcd-v3.0.7-linux-amd64.zip"
 		case "darwin":
-			rawurl = "https://github.com/coreos/etcd/releases/download/v3.0.6/etcd-v3.0.6-darwin-amd64.zip"
+			rawurl = "https://github.com/coreos/etcd/releases/download/v3.0.7/etcd-v3.0.7-darwin-amd64.zip"
 		default:
 			fmt.Println(runtime.GOOS, "isn't supported")
 		}
